@@ -1,24 +1,27 @@
 #include <stdio.h>
-#include <string.h>
 
 int main()
 {
-    char str[100], rev[100];
-    int i, j, len;
+    int num1, num2, num3, max;
 
-    printf("Enter a string: ");
-    scanf("%s", str);
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
 
-    len = strlen(str);
-    
-    for (i = len - 1, j = 0; i >= 0; i--, j++)
+    // check for maximum number
+    if (num1 > num2 && num1 > num3)
     {
-        rev[j] = str[i];
+        max = num1;
+    }
+    else if (num2 > num1 && num2 > num3)
+    {
+        max = num2;
+    }
+    else
+    {
+        max = num3;
     }
 
-    rev[j] = '\0';
-
-    printf("The reverse of the string is: %s", rev);
+    printf("Maximum number is %d\n", max);
 
     return 0;
 }

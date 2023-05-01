@@ -1,24 +1,5 @@
-#id <id.id>
-#id <id.id>
-
-id id()
-{
-    id id[100], id[100];
-    id id, id, id;
-
-    id("id id id: ");
-    id("%id", id);
-
-    id = id(id);
-    
-    id (id = id - 1, id = 0; id >= 0; id--, id++)
-    {
-        id[id] = id[id];
-    }
-
-    id[id] = '\0';
-
-    id("id id id id id id: %id", id);
-
-    id 0;
-}
+Symbol table:
+--------------
+Variable name: x, value: 10
+Variable name: y, value: 20
+Function name: main, return type: int, number of parameters: 0
